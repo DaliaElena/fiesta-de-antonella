@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+/* Importar fuente local */
+@font-face {
+  font-family: "Little Paws";
+  src: url("/fonts/LittlePaws-Regular.ttf") format("truetype"); /* Ruta en public */
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Little Paws", sans-serif;
+  font-size: 2.8rem;
+  background: url("/images/golden.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-stroke: 2px rgb(147, 101, 8);
+}
+
+
+
+
+
+
+
+/* Animación para efecto de brillo */
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* NinaAntonella */
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, 
+    #B8860B,  /* Dorado oscuro elegante */
+    #DAA520,  /* Dorado medio */
+    #FFD700,  /* Dorado intenso */
+    #B8860B,  /* Volvemos al dorado oscuro */
+    #8B6508   /* Dorado profundo, casi cobre */
+  ); 
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glitter-animation 2.5s infinite linear;
+  text-shadow: 0px 0px 1px rgba(184, 134, 11, 0.7),  
+               0px 0px 1px rgba(218, 165, 32, 0.6),  
+               0px 0px 1px rgba(255, 215, 0, 0.7);
+}
+
+@keyframes glitter-animation {
+  0% { background-position: 0% 50%; filter: brightness(0.9); }
+  50% { background-position: 100% 50%; filter: brightness(1.1); }
+  100% { background-position: 0% 50%; filter: brightness(0.9); }
+}
+
+
+
+
+/* Parrafo */
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #B8860B;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.5); /* Sombra dorada sutil */
+  
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.header {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 20px;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.body {
+  flex-grow: 1;
+}
+
+.footer {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 10px;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+button {
+  background-color: #B11D0F; /* Fondo rojo oscuro */
+  color: #FBF6D9; /* Texto en beige claro */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+button:hover {
+  background-color: #8E150C; /* Un rojo más oscuro al pasar el mouse */
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+/*Fondo del form*/
+.rsvp-background {
+  background-color: #FFFBEA; /* Un amarillo muy claro */
+}
+
+/*texto del form*/
+
+.text-dorado {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+  color: #B8860B;
+  text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.5); /* Sombra dorada sutil */
+}
+.text-gris {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+  color: #83817d;
+  text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.5); /* Sombra dorada sutil */
+}
+
+.input-bg {
+  background-color: #FFF5CC; /* Un amarillo pastel */
+  border: 1px solid #E1B000; /* Borde dorado */
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input[type="number"] {
+  color: #9CA3AF; /* Gris claro, el mismo de Tailwind text-gray-400 */
+}
+
+input[type="number"]::placeholder {
+  color: #9CA3AF; /* Mismo color gris claro */
+}
+
+.textarea-grande {
+  width: 90%; /* Más ancho */
+  height: 120px; /* Más alto */
+  max-width: 600px; /* Límite de ancho */
+}
+
+.boton-pequeno {
+  width: auto;
+  font-size: 14px; /* Letra más pequeña */
+  padding: 6px 15px; /* Menos espacio dentro del botón */
+  border-radius: 4px; /* Bordes menos redondeados */
+}
+
+.rsvp-background {
+  border-radius: 20px; /* Ajusta el valor según lo que prefieras */
+}
+
+/*Texto de la  imagen*/
+
+.texto-blanco {
+  color: white !important;
+}
+.texto-centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: white !important;
+}
+
+
+/* 🔹 Mantener el fondo degradado en todo el body */
+body {
+  background: linear-gradient(
+    to bottom, 
+    #F0ACF4, 
+    #FFAFBE, 
+    #FFB5C1, 
+    #FFB6C9, 
+    #FFF6BB, 
+    #F1D99D, 
+    #F8E6E2, 
+    #FBF6D9
+  );
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* 🔹 Contenedor principal */
+.app-container {
+  width: 100%;
+}
+
+/* 🔹 Secciones: Altura automática en lugar de 100vh */
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 🔹 Contenedor de la imagen de fondo */
+.shape-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Ajustamos a tamaño del contenido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0; /* Al fondo */
+}
+.shape-container-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Ajustamos a tamaño del contenido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0; /* Al fondo */
+}
+.shape-container-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Ajustamos a tamaño del contenido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1; /* Al fondo */
+}
+/* 🔹 Imágenes de fondo de cada sección */
+.shape {
+  position: absolute;
+  width: 110%; /* Reducimos tamaño */
+  max-height: 800px; /* Evita que las imágenes sean demasiado grandes */
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* 🔹 Ajustamos la posición de cada shape */
+.shape-header {
+  top: 1vh; /* Elevamos un poco para que no agregue espacio extra */
+  left: 20vw;
+  transform: translateX(-50%);
+}
+
+.shape-body-1a {
+  top: 50vh;
+  left: -50vw;
+  transform: translateX(-50%);
+}
+
+.shape-body-1b {
+  top: 110vh;
+  left: 0vw;
+  transform: translateX(-50%);
+}
+.shape-body-2 {
+  top: 200vh;
+  left: -10vw;
+  transform: translateX(50%);
+}
+
+.shape-footer {
+  bottom: 30vh; /* Evita que empuje la sección hacia abajo */
+  left: -50vw;
+  transform: translateX(50%);
+}
+.shape-form {
+  bottom: 5vh; /* Evita que empuje la sección hacia abajo */
+  left: -10vw;
+  transform: translateX(50%);
+}
+
+/* 🔹 Contenido de cada sección por encima del shape */
+.section > *:not(.shape-container) {
+  position: relative;
+  z-index: 1;
+}

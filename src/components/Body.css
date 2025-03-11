@@ -1,0 +1,57 @@
+.body {
+    margin-top: 10vh;
+  }
+
+  
+  .reglas-del-parque p {
+    margin-bottom: 30px;
+  }
+  .imagen-circular {
+    width: 150px; /* Ajusta el tamaño según necesites */
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+  }
+  
+  .imagen-amz {
+    width: 200px;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    display: block;
+  }
+  .contenedor-imagen {
+    text-align: center; /* Centra el contenido dentro del div */
+  }
+  .imagen-amz {
+    width: 200px;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  .reglas-del-parque{
+    padding: 10vw;
+    text-align: justify;
+  }  
+
+  .fondo-parque {
+    background-image: url("../assets/parqueHormiga.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5vw;
+}
+
+.fondo-parque p {
+    font-size: min(6vw, 9vh);
+    line-height: 1.1;
+    max-width: 90%;
+    color: white; /* Ajusta según el contraste necesario */
+}
